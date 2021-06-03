@@ -2,10 +2,33 @@
 <html>
     <head>
         <title> Day3 Examples : DOM Manipulation</title>
+       
     </head>
 
     <body>
-        <p> Hello world</p>
+        <main id = "mainbody">
+        <h1 id = "mydog" class = "dogs">
+            Scruffy
+        </h1>
+        
+        <p id = "myFriend"class = "dogs"> likes walks in the park</p>
+        <form id = "myform">
+            <h2 id = "title"> this is my form</h2>
+            <label for = "username">Username</label>
+            <input type ="text" name = "username" id = "username" >
+            
+            <label for = "password"> Password</label>
+            <input type ="password" name = "password" id = "password" >
+            
+            <label for = "password"> Confirm Password</label>
+            <input type ="password" name = "confirmPassword" id = "confrimPassword" >
+            <br>
+            <input type ="submit" name = "submit" id = "submit" >
+        </form>
+        <div id="newDiv">
+            
+        </div>
+    </main>
     </body>
-    <script scr = js/index.js> </script>
+    <script src= "index.js"></script>
 </html>

@@ -102,3 +102,38 @@ function test1(){
 document.getElementById("myFriend").addEventListener("click", function (){
     test1("Dogs!");
 });
+
+document.getElementById("myform").addEventListener("submit", function(event){
+    //alert("this form has been submitted");
+
+    
+    // we want to get a value that been entered by a user in a form
+    let username = document.getElementById("username").value;
+    // console.log(username.length);
+    username = username.trim();
+    console.log(username.length);
+    let password = document.getElementById("password").value;
+    password = password.trim();
+    console.log(password.length);
+    let confirmPassword = document.getElementById("confirmPassword").value;
+    confrimPassword = confrimPassword.trim();
+    console.log(confirmPassword.length);
+
+
+    if(username.length ==0 || username == ""){
+        document.getElementById("username").style.backgroundColor = 'red';
+        alert("please enter a valid username");
+    } else {
+        document.getElementById("username").style.backgroundColor = 'white';
+    }
+
+    let formTitle = document.getElementById("title");
+    formTitle.innerText = formTitle.innerText + "CMP 1000";
+    console.log(formTitle.innerText);
+
+    let newDiv = document.getElementById("newDiv");
+    newDiv.innerText = newDiv.innerText + "CMP 1000";
+    console.log(newDiv.innerText);
+    //alert(username);
+    event.preventDefault();
+});
